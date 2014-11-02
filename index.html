@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Orbis</title>
+  <meta name="description" content="-">
+  <meta name="author" content="Orbis">
+  <link rel="stylesheet" href="style.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="http://use.typekit.com/jqn8sgl.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+  <script>
+  	$(function() {
+		
+		//catch all clicks on a tags
+			$("a").click(function() {
+			
+			//check if it has a hash
+			if(this.hash) {	
+				//get rid of # sign
+				var hash = this.hash.substr(1);
+				
+				//get position of a name
+				var $toElement = $("a[name="+hash+"]");
+				var toPosition = $toElement.position().top;
+				
+				//scroll to element
+				$("body,html").animate({
+					scrollTop : toPosition
+				},800,"easeOutExpo");
+				
+				//don't do the jump
+				return false;
+				
+				}
+				
+			});
+			
+			if(location.hash) {
+					var hash = location.hash;
+					window.scroll(0,0);
+					$("a[href="+hash+"]").click();
+				}
+		
+	});
+  </script>
+</head>
+<body>
+<a name="home"></a><div id="container">
+	<header>
+    <a href="/#home"><img class="logo" src="images/orbis-logo-small.png" /></a>
+    	<nav>
+        	<ul>
+        		<li><a href="/">HOME</a></li>
+                <li><a href="/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="banner">
+    	<div id="iphone_banner">
+        <img src="images/banner-final.png" />
+        </div>
+        
+        <div id="tagline">
+        <h1>THE BEST PLACES IN YOUR POCKET.</h1>
+        <p></p>
+        <img src="images/download_btn.png" width="90" height="auto" />
+        </div>
+    </div>
+    
+    <div id="features">
+    
+        <div class="one-img">
+        <img src="images/iphone-for-site-nancys.png" />
+        </div>
+        <div class="one-text">
+        <h1>Share, Rate and Review</h1>
+    <p>ORBIS is the must have; the swiss army knife of food & bar discovery apps necessary in your arsenal of application wonderment. 
+		The Orbis experience includes a whole host of exciting features, enabling a richer, more intuitive way to discover Newcastle's hidden gems. Reviewing bars, 
+		restaurants and all of your local hang-outs and has never been so easy.</p><p>Rate and review that bouncing club vibe you experienced last Tuesday, or casually speak 										
+		words of wisdom about that mellow ale you embraced by the quayside.</p>
+        <p><img src="images/nancys-profile-with-stars.png" /></p>
+        </div>
+        
+        <div class="two-img">
+        <img src="images/iphone-for-site-places.png" />
+        </div>
+        <div class="two-text">
+        <h1>My Places</h1>
+    <p>HAVING found that heart warming italian bistro you love so much, why not bookmark it under 'My Places'. Giving you quick access to your favourite places, all in 
+		one, easy-to-use application. its so easy! Share them with friends or re-discover that crunchy BLT sandwich you loved so much at your favourite eatery.</p>
+        </div>
+        
+        <div class="three-img">
+        <img src="images/iphone-for-site-feed.png" />
+        </div>
+        <div class="three-text">
+        <h1>Timeline</h1>
+    <p>TIMELINE is the gateway to finding out what your friends really think about that amazing venue you suggested. Their ratings, bookmarks and 
+		reviews give you the information you need to find that perfect spot. Whether it's on the high street or down the charming backstreets of one of the UK's most popular cities you'll find that 
+		secret, independant, and brilliant place that only the locals know about.</p>
+        </div>
+        
+        <div class="four-img">
+        <img src="images/iphone-for-site-discover.png" />
+        </div>
+        <div class="four-text">
+        <h1>Trending Spots</h1>
+    <p>Having opened your Orbis app, you will be greeted by a host of top trending places, rated by fellow Orbis users who really know those 	
+bouncing hotspots located in the heart 
+		of the city. With just one touch, you will be whisked off to a page filled with information that will blow your mind so that next time you come to choose a 
+		place to eat, you can make an informed decision. Yes, you read that right, informed.</p>
+        </div>
+        
+        
+    </div>
+    
+    <div id="footer">
+    	<div class="footer-left">
+        <p>&#169; Orbis 2012</p>
+        </div>
+        <div class="footer-right">
+        <p><img src="images/app_store_badge.png" width="80" height="auto" align="right" /></p>
+        </div>
+    </div>
+    
+    
+</div>
+</body>
+</html>

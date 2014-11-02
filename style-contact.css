@@ -1,0 +1,121 @@
+body{
+	margin:0;
+}
+
+#container{
+	width:800px;
+	margin: 0 auto;
+}
+
+h1{
+	font-family: league-gothic;
+	font-size:2em;
+	text-transform:uppercase;
+	margin:0;
+}
+
+p{
+	font-family: etica-display, Helvetica, Arial, sans-serif;
+	weight:100;
+	line-height:1.5em;
+	word-spacing:0.2em;
+}
+
+header{
+	height:140px;
+	border-bottom:#DDD 1px solid;
+	position:fixed;
+	max-width:800px;
+    width:100%;
+    z-index:100;
+	background-color:#FFF;
+	margin: -176px 0 0 0;
+}
+
+header .logo{
+	margin: 28px 0 0 0;
+	float:left;
+}
+
+header nav{
+	height:140px;
+	width:500px;
+	float:right;
+	padding-right:8px;
+	z-index:101;
+}
+
+header nav a{
+	font-family: league-gothic;
+	font-size:2em;
+	text-transform:uppercase;
+	text-decoration:none;
+	color:#555;
+}
+
+header nav li:nth-child(2){
+	background-image:url(images/nav_arrow.png);
+	background-repeat:no-repeat;
+	background-position: 50% 74px;
+	padding-bottom:100px;
+}
+
+header nav a:hover{
+	color:#111;
+}
+
+header nav ul{
+	float: right;
+	padding:0;
+	margin:0;
+	list-style:none;
+	padding-top:50px;
+}
+
+header nav ul li{
+	display: inline;
+	margin-left:18px;
+}
+
+#banner{
+	width:760px;
+	height:320px;
+	margin: 176px 0 0 0;
+	padding:40px 0 0 40px;
+	background-image: url(images/bannerbckgrnd.png);
+	background-repeat:repeat-x;
+}
+
+#banner-contact{
+	width:760px;
+	height:0px;
+	margin: 176px 0 0 0;
+	padding:0px 0 0 40px;
+	background-image: url(images/bannerbckgrnd.png);
+	background-repeat:repeat-x;
+}
+
+#banner #iphone_banner{
+	float:left;
+	width:260px;
+	margin-top:-11px;
+}
+
+#banner #tagline {
+	float: left;
+	width:450px;
+	margin-left:40px;
+}
+
+#banner #tagline h1{
+	font-family: league-gothic;
+	font-size:3.5em;
+	text-transform:uppercase;
+	margin:16px 0 0 0;
+	color:#FFF;
+}
+
+#banner #tagline p{
+	line-height: 1.3em;
+	color: #FFF;
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Orbis</title>
+  <meta name="description" content="-">
+  <meta name="author" content="Orbis">
+  <link rel="stylesheet" href="style-contact.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="http://use.typekit.com/jqn8sgl.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+  <script>
+  	$(function() {
+		
+		//catch all clicks on a tags
+			$("a").click(function() {
+			
+			//check if it has a hash
+			if(this.hash) {	
+				//get rid of # sign
+				var hash = this.hash.substr(1);
+				
+				//get position of a name
+				var $toElement = $("a[name="+hash+"]");
+				var toPosition = $toElement.position().top;
+				
+				//scroll to element
+				$("body,html").animate({
+					scrollTop : toPosition
+				},800,"easeOutExpo");
+				
+				//don't do the jump
+				return false;
+				
+				}
+				
+			});
+			
+			if(location.hash) {
+					var hash = location.hash;
+					window.scroll(0,0);
+					$("a[href="+hash+"]").click();
+				}
+		
+	});
+  </script>
+</head>
+<body>
+<a name="home"></a><div id="container">
+	<header>
+    <a href="/#home"><img class="logo" src="images/orbis-logo-small.png" /></a>
+    	<nav>
+        	<ul>
+        		<li><a href="/">HOME</a></li>
+                <li><a href="/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="banner-contact">
+    	
+    </div>
+    
+    <div id="features">
+    <a name="features"></a>
+    <h1>Contact</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis accumsan mauris sit amet rhoncus. Quisque ut eros eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam at sodales odio. Donec eu nisi et orci accumsan cursus. Curabitur cursus mauris ac quam egestas molestie. Ut lorem lectus, interdum nec pellentesque sit amet, aliquam eget enim. Nulla blandit fringilla egestas. Aliquam erat volutpat. Quisque facilisis viverra quam, vel scelerisque neque accumsan vel. Phasellus ultrices suscipit fringilla. Aenean vel mi vitae eros laoreet facilisis non a urna.
+
+Aliquam vel enim arcu, eget tristique magna. Fusce tincidunt, orci eu ultricies pharetra, augue nunc porta leo, ut congue quam libero at lorem. Vestibulum viverra volutpat nulla ut lacinia. Sed et molestie ligula. Ut a egestas nulla. Pellentesque id orci orci, sodales tempor quam. Curabitur ac erat eget justo eleifend dapibus ac in velit. Aliquam sollicitudin malesuada massa vel varius. Vestibulum suscipit condimentum neque, non scelerisque elit molestie feugiat. Sed cursus pulvinar enim. Nunc quis congue erat. Nam odio arcu, venenatis nec sollicitudin sed, interdum ut odio. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla justo orci, convallis vitae faucibus in, vulputate ut purus. Cras at est elit.
+
+Vivamus mollis sem mi. Ut convallis tincidunt quam in sodales. Integer dictum, neque eu accumsan pulvinar, risus purus molestie velit, malesuada faucibus erat nibh eget magna. In vestibulum pellentesque sapien id rhoncus. Integer bibendum imperdiet egestas. Vivamus imperdiet libero sed nisl volutpat elementum. Sed ac arcu dolor. Nullam viverra, est vitae varius malesuada, felis nisi viverra massa, vel convallis mi dolor eu leo. Donec aliquam varius volutpat.</p>
+    </div>
+    
+</div>
+</body>
+</html>
